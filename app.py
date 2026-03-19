@@ -11,7 +11,7 @@ app = Flask(__name__, template_folder=template_folder)
 # --- GITHUB PAGES ADJUSTMENTS ---
 # 1. Set the Base URL to your GitHub Pages address
 # Replace 'carasj' and 'WikiSandbox' with your actual username/repo name
-app.config['FREEZER_BASE_URL'] = "https://carasj.github.io/WikiSandbox/"
+app.config['FREEZER_BASE_URL'] = "https://carasj.github.io/"
 
 # 2. GitHub Actions usually looks for a 'build' folder, not 'public'
 app.config['FREEZER_DESTINATION'] = 'build'
