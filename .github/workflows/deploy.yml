@@ -18,7 +18,7 @@ jobs:
         run: pip install -r dependencies.txt
 
       - name: Freeze Site
-        run: python freeze.py
+        run: python app.py
 
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
