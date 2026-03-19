@@ -32,7 +32,9 @@ The static assets are in the `static` directory. The layout and templates are in
         |__ pages/          -> Directory for all the pages
             |__ *.html      -> Actual pages of your wiki
     |__ .gitignore          -> Tells GitLab which files/directories should not be uploaded to the repository
-    |__ .gitlab-ci.yml      -> Automated flow for building, testing and deploying your website.
+    |__ .github
+        |__ workflows
+            |__deploy.yml      -> Automated flow for building, testing and deploying your website.
     |__ LICENSE             -> License CC-by-4.0, all wikis are required to have this license - DO NOT MODIFY
     |__ README.md           -> File containing the text you are reading right now
     |__ app.py              -> Python code managing your wiki
@@ -43,7 +45,7 @@ The static assets are in the `static` directory. The layout and templates are in
   * [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/)
   * [Python](https://www.python.org): Programming language
   * [Flask](https://palletsprojects.com/projects/flask): Python framework
-  * [Fronzen-Flask](https://pypi.org/project/Frozen-Flask): Library that builds the wiki to be deployed as a static website
+  * [Frozen-Flask](https://pypi.org/project/Frozen-Flask): Library that builds the wiki to be deployed as a static website
   * [Bootstrap](https://getbootstrap.com/docs/5.3/components): CSS and JS components used
 
 ### Building locally (advanced users)
@@ -52,7 +54,7 @@ To work locally with this project, follow the steps below:
 
 #### Install
 ```bash
-git clone https://gitlab.igem.org/templates/wiki-frozen-flask.git
+git clone https://github.com/carasj/WikiSandbox.git
 cd wiki-frozen-flask
 python3 -m venv venv
 . venv/bin/activate # on Linux, MacOS; or
