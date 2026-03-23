@@ -28,9 +28,10 @@ def manual_freeze():
 def home():
     return render_template('pages/home.html')
 
-@app.route('/<page>')
+@app.route('/<page>.html') # Add .html here so the Freezer knows the filename
 def pages(page):
-    # This logic looks for html files in wiki/pages/
+    # This keeps the source files in the 'pages' folder 
+    # but outputs them to the top level of 'build/'
     return render_template('pages/' + page.lower() + '.html')
 
 # Main Function
