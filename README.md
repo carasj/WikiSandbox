@@ -1,4 +1,6 @@
-# iGEM TeamName Wiki
+# iGEM Okinawa Wiki Sandbox
+
+Almost all of the following is the README from the iGEM Template, not everything applies for the Sandbox, I only updated the code for installing it, if you want to work on it locally.
 
 This repository **MUST** contain all coding assets to generate your team's wiki (HTML, CSS, JavaScript, TypeScript, Python, etc).
 
@@ -34,7 +36,7 @@ The static assets are in the `static` directory. The layout and templates are in
     |__ .gitignore          -> Tells GitLab which files/directories should not be uploaded to the repository
     |__ .github
         |__ workflows
-            |__deploy.yml      -> Automated flow for building, testing and deploying your website.
+            |__deploy.yml   -> Automated flow for building, testing and deploying your website.
     |__ LICENSE             -> License CC-by-4.0, all wikis are required to have this license - DO NOT MODIFY
     |__ README.md           -> File containing the text you are reading right now
     |__ app.py              -> Python code managing your wiki
